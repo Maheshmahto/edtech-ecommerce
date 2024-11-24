@@ -31,9 +31,12 @@
                <li> <a href="Courses.html">Courses</a></li>
                <li> <a href="About.html">About</a></li>
                <li> <a href="Contact.html">Contact</a></li>
-               <li> <a href="login.html">login</a></li>
+               <li> <a href="login2.html">logout</a></li>
+             
 
             </ul>
+            <!-- <button id="logout-btn" class="btn logout"> <li> <a href="login.html">logout</a></li>
+            </button> -->
             <button id="open-menu-btn"><i class='bx bx-menu'></i></button>
             <button id="close-menu-btn"><i class='bx bx-x'></i></i></button>
 
@@ -347,49 +350,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <!---------------- swiperjs--------------->
+              <script type="module">
+               // Import Firebase modules
+               import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+               import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+       
+               // Firebase configuration (reuse the same configuration from your main script)
+               const firebaseConfig = {
+                   apiKey: "AIzaSyDDjFBPqsK3NJPLgA5eo8vZyoUYFviL-OM",
+                   authDomain: "login-form-1401e.firebaseapp.com",
+                   projectId: "login-form-1401e",
+                   storageBucket: "login-form-1401e.appspot.com",
+                   messagingSenderId: "517056843238",
+                   appId: "1:517056843238:web:5580e315724c1564539a27"
+               };
+       
+               // Initialize Firebase
+               const app = initializeApp(firebaseConfig);
+               const auth = getAuth(app);
+       
+               // Logout Event
+               document.getElementById('logout-btn').addEventListener('click', () => {
+                   signOut(auth)
+                       .then(() => {
+                           alert('Logged out successfully!');
+                           window.location.href = "login2.html"; // Redirect to the login page
+                       })
+                       .catch(error => {
+                           alert('Error logging out: ' + error.message);
+                       });
+               });
+           </script>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-       var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
 
               <!---------------- javscript link --------------->
 
