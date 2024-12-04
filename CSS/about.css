@@ -131,8 +131,10 @@ section {
 }
 .team_container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12rem;
+    /* display: flex;
+    justify-content: space-around; */
 }
 .team_member{
   background: var(--color-bg2);
@@ -141,14 +143,22 @@ section {
   /* border-radius: 1rem; */
   transition: var(--transition);
   position: relative; 
-  overflow: hidden;        /** for social meidea icon */
+  overflow: hidden; 
+  /* width: 300px; */
+       /** for social meidea icon */
 }
 .team_member:hover{
   background: transparent;
   border-color: var(--color-primary);
 }
 .team_member-image img{
-  filter: saturate(0);
+  /* filter: saturate(0); */
+  /* width: 100%; */
+  width: 100%; /* Maintain aspect ratio */
+  height: 260px; /* Set a consistent height */
+  object-fit: cover; /* Ensures the image fills the area properly */
+  /* border-radius: 10px */
+ 
 }
 .team_member:hover img{
   filter: saturate(1);
@@ -201,10 +211,12 @@ section {
   /* meet our team section */
   .team_container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+   
   }
   .team_member{
-    padding: 1rem;
+    /* padding: 0rem; */
+
   }
 }
 /*=================== media queries for phones====================== */
