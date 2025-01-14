@@ -4,382 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edtech</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <!-- boxicons cdn-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!-- swiper js -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!--  navigation bar started -->
-    <nav>
-       <div class="container nav_container">
-            <a href="login2.html" class="logo" >   <i class='bx bxs-graduation' ></i><h4> Edtech</h4></a>   <!-- logo -->
-
-            <!-- <i class='bx bxs-graduation' ></i> -->
-            <ul class="nav_menu">
-               <li> <a href="login2.html">Home</a></li>
-               <li> <a href="Courses.html">Courses</a></li>
-               <li> <a href="About.html">About</a></li>
-               <li> <a href="Contact.html">Contact</a></li>
-               <li> <a href="index.html">logout</a></li>
-             
-
-            </ul>
-            <!-- <button id="logout-btn" class="btn logout"> <li> <a href="login.html">logout</a></li>
-            </button> -->
-            <button id="open-menu-btn"><i class='bx bx-menu'></i></button>
-            <button id="close-menu-btn"><i class='bx bx-x'></i></i></button>
-
-       </div>
-
-    </nav>
-
-    <!-- end of navigation bar  --- -->
-
-
-    <header>
-       <div class="container header_container" id="header2">
-          <div class="header_left">
-            <h1>Grow  your skills to advance your career</h1>
-            <p>
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, id vero. Nobis at officia quo est reprehenderit, quae ex nihil!
+<div class="form6">
+    <input id="form6-toggle" type="checkbox">
+    <form id="authForm">
+        <div class="form6-login">
+            <span>SignIn</span>
+            <input id="signin-email" type="text" placeholder="Email or Username" required>
+            <input id="signin-password" type="password" placeholder="Password" required>
+            <button type="button" id="signin-btn">SignIn</button>
+            <p class="toggle-section">
+                Don't have an account?
+                <label for="form6-toggle">SignUp</label>
             </p>
-            <a href="Courses.html" class="btn btn-primary">Get Started</a>
-          </div>
-             
-          <div class="header_right">
-                <div>
-                   <div class="header_right-image">
-                      <img src="Removal-687.png" alt="">
-                   </div>
-                </div>
-          </div>
-       </div>
-    </header>
-    <!------------------ end of header--------- ---->
-
-    <section class="categories">
-         <div class="container categories_container">
-            <div class="categories_left">
-                <h1>Categories</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente labore nisi corporis atque aut alias, architecto eveniet quod qui, vitae maiores ea perferendis, numquam aspernatur odit commodi similique consectetur repellat?
-                </p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-
-            <div class="categories_right">
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bxl-bitcoin'></i></span>
-                   <h5>Blockchain</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bx-palette' ></i></span>
-                   <h5>Graphic design</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bx-palette' ></i></span>
-                   <h5>Graphic design</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bx-dollar-circle' ></i></span>
-                   <h5>finance</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bxl-bitcoin'></i></span>
-                   <h5>Blockchain</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-                <article class="category">
-                   <span  class="category_icon"><i class='bx bxl-bitcoin'></i></span>
-                   <h5>Blockchain</h5>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ad.</p>
-                </article>
-
-            </div>
-         </div>
-    </section>
-
-        <!---------------- end of categoreis --------------->
-<!---------------- start of courses --------------->
-
-      <section class="Courses">
-            <h2>Our popular courses</h2>
-            <div class="container courses_container">
-               <article class="course">
-                  <div class="course_image">
-                     <img src="images/course1.jpg" alt="">
-                  </div>
-
-                  <div class="course_info">
-                    <h4>Resposive Social Media Website UI Design</h4>
-                    <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, aliquam rerum! Dolores natus deleniti exercitationem. Ab.
-                     </p>
-                    <a href="Courses.html" class="btn btn-primary">Learn More</a>
-                  </div>
-               </article>
-
-               <article class="course">
-                  <div class="course_image">
-                     <img src="images/course2.jpg" alt="">
-                  </div>
-                  <div class="course_info">
-                     <h4>Resposive SmartHome Website Design</h4>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, aliquam rerum! Dolores natus deleniti exercitationem. Ab.
-                     </p>
-                     <a href="Courses.html" class="btn btn-primary">Learn More</a>
-                  </div>
-               </article>
-
-               <article class="course">
-                  <div class="course_image">
-                     <img src="images/course3.jpg" alt="">
-                  </div>
-                  <div class="course_info">
-                     <h4>Resposive Admin Deshboard UI Design</h4>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, aliquam rerum! Dolores natus deleniti exercitationem. Ab.
-                     </p>
-                     <a href="Courses.html" class="btn btn-primary">Learn More</a>
-                  </div>
-
-               </article>
-            </div>
-      </section>
- <!---------------- end of courses --------------->
-
-
- <!---------------- start frequently asked question --------------->
-   
-  <section class="faqs">
-         <h2>Frequently Asked questions</h2>
-      <div class="container faqs_container">
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq ">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i></div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"><i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"><i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-
-          <article class="faq">
-              <div class="faq_icon"> <i class='bx bx-plus' ></i> </div>
-              <div class="question_answer">
-                  <h4>How do I know the right courses for me?</h4>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus quis fuga eveniet rerum dolorem ipsa, voluptatibus, suscipit minus corporis, vel culpa ratione itaque velit.
-                  </p>
-              </div>
-          </article>
-      </div>
-  </section>
-
-   <!---------------- end frequently asked question --------------->
-
-
-<!--footer section start here  -->
-   <footer class="footer">
-       <div class="container footer_container">
-         <div class="footer_1">
-            <a href="login2.html" class="footer_logo"><h4>Edtech</h4></a>
-            <p> Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>Ipsa, repudiandae.
+        </div>
+        <div class="form6-signup">
+            <span>SignUp</span>
+            <input id="signup-name" type="text" placeholder="Name" required>
+            <input id="signup-email" type="email" placeholder="Email" required>
+            <input id="signup-password" type="password" placeholder="Password" required>
+            <button type="button" id="signup-btn">SignUp</button>
+            <p class="toggle-section">
+                Already have an account?
+                <label for="form6-toggle">SignIn</label>
             </p>
-         </div>
+        </div>
+    </form>
+</div>
 
-         <div class="footer_2">
-            <h4>permalinks</h4>
-            <ul class="permalinks">
-               <li><a href="login2.html">Home</a></li>
-               <li><a href="About.html">About</a></li>
-               <li><a href="Courses.html">Courses</a></li>
-               <li><a href="Contact.html">Contact</a></li>
-            </ul>
-         </div>
+<script type="module">
+  // Import Firebase modules
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
-         <div class="footer_3">
-            <h4>Primary</h4>
-            <ul class="privacy">
-               <li><a href="#">privacy policy</a></li>
-               <li><a href="#">terms and conditions</a></li>
-               <li><a href="#">Refund  policy</a></li>
-            </ul>
-         </div>
+  // Firebase configuration
+  const firebaseConfig = {
+      apiKey: "AIzaSyDDjFBPqsK3NJPLgA5eo8vZyoUYFviL-OM",
+      authDomain: "login-form-1401e.firebaseapp.com",
+      projectId: "login-form-1401e",
+      storageBucket: "login-form-1401e.appspot.com",
+      messagingSenderId: "517056843238",
+      appId: "1:517056843238:web:5580e315724c1564539a27"
+  };
 
-         <div class="footer_4">
-            <h4>Contact Us</h4>
-            <div>
-               <p>7977727548</p>
-               <p>mjm43487@gmail.com</p>
-            </div>
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
 
-            <ul class="footer_socials">
-               <li>
-                  <a href="#"><i class='bx bxl-facebook-square'></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class='bx bxl-instagram'></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class='bx bxl-twitter'></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-               </li>
-              
-            </ul>
-         </div>  
+  // SignUp Event
+  document.getElementById('signup-btn').addEventListener('click', () => {
+      const email = document.getElementById('signup-email').value;
+      const password = document.getElementById('signup-password').value;
 
-       </div>
-       <div class="footer_copyright">
-         <small> Copyright &copy; Edtech</small>                             
-        </div>  
-    </footer>
+      createUserWithEmailAndPassword(auth, email, password)
+          .then(userCredential => {
+              alert('SignUp Successful!');
+              // Optionally redirect to another page
+          })
+          .catch(error => {
+              alert(error.message);
+          });
+  });
 
-   
- 
+  // SignIn Event
+  document.getElementById('signin-btn').addEventListener('click', () => {
+      const email = document.getElementById('signin-email').value;
+      const password = document.getElementById('signin-password').value;
 
-              <!---------------- swiperjs--------------->
-              <script type="module">
-               // Import Firebase modules
-               import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-               import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
-       
-               // Firebase configuration (reuse the same configuration from your main script)
-               const firebaseConfig = {
-                   apiKey: "AIzaSyDDjFBPqsK3NJPLgA5eo8vZyoUYFviL-OM",
-                   authDomain: "login-form-1401e.firebaseapp.com",
-                   projectId: "login-form-1401e",
-                   storageBucket: "login-form-1401e.appspot.com",
-                   messagingSenderId: "517056843238",
-                   appId: "1:517056843238:web:5580e315724c1564539a27"
-               };
-       
-               // Initialize Firebase
-               const app = initializeApp(firebaseConfig);
-               const auth = getAuth(app);
-       
-               // Logout Event
-               document.getElementById('logout-btn').addEventListener('click', () => {
-                   signOut(auth)
-                       .then(() => {
-                           alert('Logged out successfully!');
-                           window.location.href = "login2.html"; // Redirect to the login page
-                       })
-                       .catch(error => {
-                           alert('Error logging out: ' + error.message);
-                       });
-               });
-           </script>
-
-
-
-
-
-              <!---------------- javscript link --------------->
-
-        <script src="main.js"></script>
+      signInWithEmailAndPassword(auth, email, password)
+          .then(userCredential => {
+              alert('SignIn Successful!');
+              window.location.href = "login2.html"; // Redirect to Hello World page
+          })
+          .catch(error => {
+              alert(error.message);
+          });
+  });
+</script>
 </body>
 </html>
